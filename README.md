@@ -1,1 +1,1 @@
-# Projeto Poetry + Django
+# Projeto Poetry + Django: instalação de dependencias
