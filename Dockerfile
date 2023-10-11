@@ -44,9 +44,9 @@ RUN apt-get update \
 # RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py -o python get-poetry.py
 RUN pip install poetry
 
-# RUN apt-get update \
-    # && apt-get -y install libpq-dev gcc \
-    # && pip install psycopg2
+RUN apt-get update \
+    && apt-get -y install libpq-dev gcc \
+    && pip install psycopg2
 
 # copy project requirement files here to ensure they will be cached.
 WORKDIR $PYSETUP_PATH
