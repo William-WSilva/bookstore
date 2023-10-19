@@ -22,6 +22,5 @@ services:
       - ./env.dev
     depends_on:
       - db
-
 volumes:
   postgres_data:
