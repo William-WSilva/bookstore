@@ -1,5 +1,5 @@
 name: Python Pull Request Workflow
-on: [pull_request]
+on: [pull_request] # comando(pull_request) no projeto que iniciará automações Quality check
 jobs:
 
   qa:
