@@ -3,22 +3,16 @@ name: Deploy to Vercel
 on:
   push:
     branches:
-      - main # Ações ao gerar push na main
+      - 'main' # Adapte conforme necessário
 
 jobs:
-  build:
+  vercel-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
+      - name: Check out repository
         uses: actions/checkout@v2
-
-      - name: Install Vercel CLI
-        run: |
-          curl -o- https://raw.githubusercontent.com/vercel/cli/$(curl -s https://api.github.com/repos/vercel/cli/releases/latest | jq -r .tag_name)/dist/bin/vercel.js | sudo tee /usr/local/bin/vercel > /dev/null
-          sudo chmod +x /usr/local/bin/vercel
-
       - name: Deploy to Vercel
-        run: vercel --prod
+        run: |
+          echo ${{ secrets.VERCEL_TOKEN }} | vercel --prod
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
