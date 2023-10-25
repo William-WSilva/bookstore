@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-yskg!_(rz_!k^c%n5fxl!tgde8j!6wn5t4=078ss&-xe676z%o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'wrsilva-bookstore-api.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'wrsilva-bookstore-api-2a24b9d88d44.herokuapp.com']
 
 
 # Application definition
