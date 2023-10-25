@@ -10,7 +10,6 @@ Poetry
 Docker && docker-compose
 
 ```
-
 ## Quickstart
 
 1. Clone this project

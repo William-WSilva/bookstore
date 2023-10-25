@@ -151,5 +151,4 @@ INTERNAL_IPS = [
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 STATIC_ROOT = BASE_DIR / 'staticfiles'
